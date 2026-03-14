@@ -1,12 +1,10 @@
 :root {
-    --bg-dark: #0a0a0f;
-    --bg-card: #12121a;
-    --neon-cyan: #00f5ff;
-    --neon-magenta: #ff00ff;
-    --neon-purple: #b366ff;
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0b0;
-    --border-color: #2a2a3a;
+    --bg-dark: #ffffff;
+    --bg-card: #f9f9f9;
+    --accent-color: #0078d4;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-color: #e0e0e0;
 }
 
 * {
@@ -16,11 +14,24 @@
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     background: var(--bg-dark);
     color: var(--text-primary);
     line-height: 1.6;
-    min-height: 100vh;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005a9e;
 }
 
 /* Animated grid background */
